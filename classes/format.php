@@ -521,10 +521,7 @@ class Format
 	 * @param   string  $string
 	 * @return  mixed
 	 */
-	private function _from_json($string)
-	{
-		return json_decode(trim($string));
-	}
+	
 
 	/**
 	 * Import Serialized data
@@ -532,10 +529,7 @@ class Format
 	 * @param   string  $string
 	 * @return  mixed
 	 */
-	private function _from_serialize($string)
-	{
-		return unserialize(trim($string));
-	}
+	
 
 	/**
 	 * Makes json pretty the json output.

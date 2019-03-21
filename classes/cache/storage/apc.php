@@ -252,30 +252,7 @@ class Cache_Storage_Apc extends \Cache_Storage_Driver
 	 * @param   mixed   value
 	 * @return  mixed
 	 */
-	private function _validate_config($name, $value)
-	{
-		switch ($name)
-		{
-			case 'cache_id':
-				if (empty($value) or ! is_string($value))
-				{
-					$value = 'fuel';
-				}
-			break;
-
-			case 'expiration':
-				if (empty($value) or ! is_numeric($value))
-				{
-					$value = null;
-				}
-			break;
-
-			default:
-			break;
-		}
-
-		return $value;
-	}
+	
 
 	/**
 	 * get's the apc key belonging to the cache identifier
